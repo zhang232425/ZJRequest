@@ -1,0 +1,74 @@
+PODS:
+  - Alamofire (5.6.2)
+  - DeviceKit (4.7.0)
+  - HandyJSON (5.0.2)
+  - KeychainSwift (20.0.0)
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - Moya/RxSwift (15.0.0):
+    - Moya/Core
+    - RxSwift (~> 6.0)
+  - RxSwift (6.5.0)
+  - SwiftyJSON (5.0.1)
+  - ZJDevice (0.1.0):
+    - DeviceKit
+    - ZJKeychain
+  - ZJKeychain (0.1.0):
+    - KeychainSwift
+  - ZJLocalizable (0.1.0)
+  - ZJRegion (0.1.0)
+  - ZJRequest (0.1.0):
+    - ZJRequest/Core (= 0.1.0)
+    - ZJRequest/RxSwift (= 0.1.0)
+  - ZJRequest/Core (0.1.0):
+    - HandyJSON
+    - Moya
+    - SwiftyJSON
+    - ZJDevice
+    - ZJLocalizable
+    - ZJRegion
+  - ZJRequest/RxSwift (0.1.0):
+    - Moya/RxSwift
+    - ZJRequest/Core
+
+DEPENDENCIES:
+  - ZJRequest (from `../`)
+
+SPEC REPOS:
+  "git@github.com:zhang232425/ZJSpecs.git":
+    - ZJDevice
+    - ZJKeychain
+    - ZJLocalizable
+    - ZJRegion
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - DeviceKit
+    - HandyJSON
+    - KeychainSwift
+    - Moya
+    - RxSwift
+    - SwiftyJSON
+
+EXTERNAL SOURCES:
+  ZJRequest:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
+  DeviceKit: c870c34f7c0e0ac4caa6f052e6efe7ef1472c5a1
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+  KeychainSwift: 0ce6a4d13f7228054d1a71bb1b500448fb2ab837
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+  ZJDevice: bfc36b209a264aa5b877a733c6a7cffa856038db
+  ZJKeychain: 056dd2cf24a6d44cb41677290742fe46cac94d39
+  ZJLocalizable: 3c925ba648064d1da4ddc70c29335d4029fc0445
+  ZJRegion: e077f30a1ebf32398f2e9af9380a7fe1ab4ffc61
+  ZJRequest: 7fa224329aeb1fd74b09f1d7c98793dcf520d3a7
+
+PODFILE CHECKSUM: 5d6b179422f92d4853738941eed66d0f97a19679
+
+COCOAPODS: 1.11.2

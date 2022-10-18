@@ -1,0 +1,70 @@
+{
+  "name": "ZJRequest",
+  "version": "0.1.0",
+  "summary": "A short description of ZJRequest.",
+  "homepage": "https://github.com/zhang232425/ZJRequest",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zhang232425": "519301084@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/zhang232425/ZJRequest.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "ZJRequest/Classes/**/*",
+  "resource_bundles": {
+    "ZJRequest": [
+      "ZJRequest/Assets/**/*"
+    ]
+  },
+  "static_framework": true,
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": "ZJRequest/Classes/Core/",
+      "resource_bundles": {
+        "ZJRequest": [
+          "ZJRequest/Assets/**/*"
+        ]
+      },
+      "dependencies": {
+        "ZJDevice": [
+
+        ],
+        "ZJRegion": [
+
+        ],
+        "ZJLocalizable": [
+
+        ],
+        "Moya": [
+
+        ],
+        "HandyJSON": [
+
+        ],
+        "SwiftyJSON": [
+
+        ]
+      }
+    },
+    {
+      "name": "RxSwift",
+      "source_files": "ZJRequest/Classes/RxRequest/",
+      "dependencies": {
+        "ZJRequest/Core": [
+
+        ],
+        "Moya/RxSwift": [
+
+        ]
+      }
+    }
+  ]
+}
